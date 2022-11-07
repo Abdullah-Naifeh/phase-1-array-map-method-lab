@@ -28,17 +28,9 @@ const titleCased = () => {
 return titles
 }
 
-const capitalized = titles.map(title => {
-  return title.split(' ').map(word => word[0].toUpperCase() + word.substring(1)).join(' ')
-})
+// const capitalized = titles.map(title => {
+//   return title.split(' ').map(word => word[0].toUpperCase() + word.substring(1)).join(' ')
+// })
 
 
-console.log(capitalized);
-
-// function CapFirstLet(title){
-// for (const word of title){
-//   word.cha
-// }
-// }
-
-// CapFirstLet()
+console.log(titleCased());
