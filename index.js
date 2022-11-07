@@ -12,5 +12,33 @@ const tutorials = [
 ];
 
 const titleCased = () => {
-  return tutorials
+  const titles = tutorials.map((title) => {
+    let singelTitle = title
+    let wordsarr =  singelTitle.split(' ')
+     wordsarr = wordsarr.map((word => {
+      let capitalizeWord =  word.charAt(0).toUpperCase() + word.substring(1)
+      return capitalizeWord
+    }))
+
+    wordsarr = wordsarr.join(' ')
+
+    return wordsarr
+  }) 
+
+return titles
 }
+
+const capitalized = titles.map(title => {
+  return title.split(' ').map(word => word[0].toUpperCase() + word.substring(1)).join(' ')
+})
+
+
+console.log(capitalized);
+
+// function CapFirstLet(title){
+// for (const word of title){
+//   word.cha
+// }
+// }
+
+// CapFirstLet()
